@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <!--st--> 
+   <style type="text/css">
+   	.bg-1{
+   		background-image: url(pey.jpg);
+   		width: 100%;
+
+
+   	}
+   	.main{
+   		height: 700px;
+   		width: 1200px
+   	}
+   	.d{
+   		display: flex;
+   	}
+   	.tab{
+   		height: 700px;
+   		width: 300px;
+   		background-color: red;
+   		padding-left: 20px
+   	}
+   	.bg-2{
+   		background-color: green
+   	}
+   	.mx-auto{
+   		margin-right: auto;
+   		margin-left: auto;
+   	}
+   	.img-1{
+   		left: 435px;
+   		top:537px;
+   		background-color: white;
+   		position: absolute;
+   		
+   		
+   	}
+   	.img-2{
+   		left: 760px;
+   		top:310px;
+   		background-color: ;
+   		position: absolute;
+   		height: 205px;
+   		width: 200px
+   	}
+   	.img-3{
+   		left: 640px;
+   		top:55px;
+   		background-color: ;
+   		position: absolute;
+   	}
+   	.img-4{
+   		left: 360px;
+   		top:670px;
+   		background-color: ;
+   		position: absolute;
+   	}
+   	.img-5{
+   		left: 1030px;
+   		top:235px;
+   		background-color: ;
+   		position: absolute;
+   		height: 285px;
+   	}
+   	.hh{
+   		text-decoration: none;
+   	}
+   	.hh2{
+   		text-decoration: none;
+   	}
+   	.hh3{
+   		text-decoration: none;
+   	}
+   	.hh4{
+   		text-decoration: none;
+   	}
+   	.hh5{
+   		text-decoration: none;
+   	}
+   </style>
+
+
+<!--dv-->
+<div class="d mx-auto">
+	<div class="bg-1 main mx-auto">
+		<img class="img-1" src="pey-2.jpg"></img>
+		<img src="pey3.jpg" class="img-2">
+		<img src="pey-4.jpg" class="img-3">
+		<img src="pey-5.jpg" class="img-4">
+		<img src="pey-6.jpg" class="img-5">
+	</div>
+	<div class="tab">
+		<div class="bg-2">
+			<h1>Очки <span class="score"></span></h1>
+		</div>
+		<h1>Осталось Найти:</h1>
+		<h4 class="hh">1 - низ моста</h4>
+		<h4 class="hh2">2 - одна из клумб</h4>
+		<h4 class="hh3">3 - ствол центр. дерева</h4>
+		<h4 class="hh4">4 - листы под мостом</h4>
+		<h4 class="hh5">5 - правая клумба</h4>
+	</div>
+</div>
+
+
+
+<!--sc-->
+<script type="text/javascript">
+	let number = 0
+    document.querySelector('.score').innerHTML = number;
+    document.querySelector('.img-1').onclick = function(){
+    	alert('ну норм')
+		document.querySelector('.score').innerHTML = number = number + 1
+		document.querySelector('.hh').style.textDecoration = 'line-through'
+	}
+	document.querySelector('.img-2').onclick = function(){
+    	alert('ваще ваще')
+		document.querySelector('.score').innerHTML = number = number + 1
+		document.querySelector('.hh2').style.textDecoration = 'line-through'
+	}
+	document.querySelector('.img-3').onclick = function(){
+    	alert('крутой')
+		document.querySelector('.score').innerHTML = number = number + 1
+		document.querySelector('.hh3').style.textDecoration = 'line-through'
+	}
+	document.querySelector('.img-4').onclick = function(){
+    	alert('окда')
+		document.querySelector('.score').innerHTML = number = number + 1
+		document.querySelector('.hh4').style.textDecoration = 'line-through'
+	}
+	document.querySelector('.img-5').onclick = function(){
+    	alert('ладно.')
+		document.querySelector('.score').innerHTML = number = number + 1
+		document.querySelector('.hh5').style.textDecoration = 'line-through'
+	}
+	
+</script>
+</body>
+</html>
